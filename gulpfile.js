@@ -18,7 +18,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/wp/",
+    proxy: "hyperion.home/wp/",
     notify: false
 };
 
@@ -112,7 +112,7 @@ gulp.task('watch', function () {
 // Minifies CSS files
 gulp.task('cssnano', function(){
   return gulp.src('./css/theme.css')
-    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano({discardComments: {removeAll: true}}))

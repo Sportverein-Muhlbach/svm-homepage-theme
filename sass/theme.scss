@@ -10,3 +10,147 @@
 // Any additional imported files //
 @import "theme/theme";  // <--------- Thats where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // contact form 7 - Bootatrap 4 support
+
+body {
+    background-color: $primary-color;
+}
+
+.wrapper {
+    background-color: $ternary-color;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.svm-topbar {
+    background-color: $ternary-color;
+}
+
+.svm-logobar {
+    background-color: $primary-color;
+}
+
+.svm-logo {
+    width: 300px; 
+    //height: 150px;
+    margin-top: 50px;
+    margin-left: -38px;
+}
+
+.svm-header-bgimg {
+    z-index: 1000;
+    position: absolute;
+    right: 120px;
+
+    top: 20px; 
+    width: 400px;
+    opacity: 0.2;
+}
+
+.svm-searchbar {
+    margin-bottom: 85px;
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: $primary-color !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navbar-nav > .menu-item {
+    // height: 65px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+
+    .nav-link {
+        // color: black;
+    }
+
+    .nav-link:hover {
+        // color: black;
+    }
+}
+
+.navbar-inverse .navbar-brand {
+    // color: black;
+    // margin-right: 120px;
+}
+
+.navbar-nav .active > a {
+    // color: black !important;
+}
+
+.svm-menu-item > li::before {
+    content: "//";
+    color: $secondary-color;
+
+    margin-top: 10px;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+
+.navbar-nav > .menu-item:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  border-bottom: 2px solid;
+  border-color: $secondary-color;
+  margin-top: 5px;
+}
+
+
+/// footer
+.svm-footer {
+    background-color: $footer-background;
+    
+    .svm-footer-content {
+
+        .svm-footer-col {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        h3 {
+            color: $footer-heading;
+            font-family: "Open sans", sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        p, label, input {
+            color: $footer-front;
+        }
+
+        .footer-latest-posting {
+            margin-bottom: 20px;
+
+            .image {
+                width: 64px;
+            }
+
+            .info {
+                color: $footer-front;
+                margin-left: 10px;
+                .text {
+                    
+                }
+            }
+        }
+    }
+}

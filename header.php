@@ -28,13 +28,44 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
+	<div class="wrapper-fluid svm-topbar">
+		top
+	</div>
+
+	<div class="wrapper-fluid svm-logobar">
+
+		<div class="container">
+			<div class="d-flex flex-row align-items-end" style="margin-left: 100px">
+				<img src="wp-content/themes/understrap/img/svm_logo.png" class="svm-logo" />
+				<!--<form class="navbar-form align-bottom svm-searchbar" role="search" style="width: 30%">
+					<div class="input-group add-on">
+					<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+					</div>
+				</form>-->
+
+				<div style="color: white;margin-bottom: 42px; margin-left: 10px">
+					<div>
+						some more stuff
+					</div>
+					<div style="font-size: 50px">Sportverein Mühlbach</div>
+					<div>
+						seit 19XX
+					</div>
+
+					<img src="wp-content/themes/understrap/img/runner.png" class="svm-header-bgimg hidden-xs-down" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
 		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
-
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
@@ -44,22 +75,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</button>
 
 					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
+					<!-- <?php if ( ! has_custom_logo() ) { ?>
 
 						<?php if ( is_front_page() && is_home() ) : ?>
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"> <?php bloginfo( 'name' ); ?></a></h1>
 							
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">  <?php bloginfo( 'name' ); ?></a>
 						
 						<?php endif; ?>
 						
 					
 					<?php } else {
 						the_custom_logo();
-					} ?><!-- end custom logo -->
+					} ?> -->
+					
+					<!-- end custom logo -->
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -67,13 +100,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
+						'menu_class'      => 'navbar-nav svm-menu-item',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
+				<form style="width: 100%; max-width: 320px" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+					<div class="input-group">
+						<input class="field form-control" id="s" name="s" type="text"
+							placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>">
+						<span class="input-group-btn">
+							<input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
+							value="<?php esc_attr_e( 'Search', 'understrap' ); ?>">
+						</span>
+					</div>
+				</form>
+
 			<?php if ( 'container' == $container ) : ?>
+
 			</div><!-- .container -->
 			<?php endif; ?>
 

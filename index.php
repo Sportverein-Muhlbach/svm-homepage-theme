@@ -21,11 +21,14 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 
+
 <div class="wrapper" id="wrapper-index">
+
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
+
 
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
@@ -53,6 +56,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<?php else : ?>
 
 					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+
 
 				<?php endif; ?>
 
