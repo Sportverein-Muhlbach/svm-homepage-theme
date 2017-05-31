@@ -37,7 +37,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="container">
 			<div class="d-flex flex-row align-items-end" style="margin-left: 100px">
-				<img src="wp-content/themes/understrap/img/svm_logo.png" class="svm-logo" />
+			
+				<img src="<?php bloginfo('template_url'); ?>/img/svm_logo.png" class="svm-logo" />
 				<!--<form class="navbar-form align-bottom svm-searchbar" role="search" style="width: 30%">
 					<div class="input-group add-on">
 					<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
@@ -55,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						seit 19XX
 					</div>
 
-					<img src="wp-content/themes/understrap/img/runner.png" class="svm-header-bgimg hidden-xs-down" />
+					<img src="<?php bloginfo('template_url'); ?>/img/runner.png" class="svm-header-bgimg hidden-xs-down" />
 				</div>
 			</div>
 		</div>
