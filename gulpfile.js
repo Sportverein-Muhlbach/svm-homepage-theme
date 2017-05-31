@@ -18,7 +18,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "hyperion.home/wp/",
+    proxy: "http://192.168.0.10/svm-homepage/",
     notify: false
 };
 

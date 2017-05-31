@@ -12,14 +12,14 @@
 @import "theme/contact-form7"; // contact form 7 - Bootatrap 4 support
 
 body {
-    background-color: $primary-color;
+    // background-color: $primary-color;
 }
 
 .wrapper {
     background-color: $ternary-color;
     margin-left: 50px;
     margin-right: 50px;
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: auto;
 }
 
@@ -115,6 +115,7 @@ body {
 /// footer
 .svm-footer {
     background-color: $footer-background;
+    background-color: $primary-color;
     
     .svm-footer-content {
 

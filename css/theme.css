@@ -9232,14 +9232,10 @@ h1.navbar-brand a:hover {
     color: #d9534f !important;
     border: 1px solid #eceeef !important; }
 
-body {
-  background-color: #222674; }
-
 .wrapper {
   background-color: white;
   margin-left: 50px;
   margin-right: 50px;
-  max-width: 1200px;
   margin: auto; }
 
 .svm-topbar {
@@ -9300,7 +9296,8 @@ body {
   margin-top: 5px; }
 
 .svm-footer {
-  background-color: black; }
+  background-color: black;
+  background-color: #222674; }
   .svm-footer .svm-footer-content .svm-footer-col {
     padding-left: 40px;
     padding-right: 40px; }
