@@ -35,31 +35,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-3">	
 				<h3>Aktuelle Posts</h3>
 
-				<div class="d-flex flex-row footer-latest-posting">
-					<img class="image" src="http://placekitten.com/300/200">
-					<div class="info d-flex flex-column hidden-xs-down">
-						<div class="title">Le Posting</div>
-						<div class="text">by super Poster9000</div>
+				<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+				<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+					<div class="d-flex flex-row footer-latest-posting">
+						<?php
+							if(has_post_thumbnail())
+							{
+								?>
+									<img class="image" src="<?php the_post_thumbnail_url(); ?>">
+								<?php
+							}
+							else
+							{
+								?>
+									<div style="width: 64px; height: 64px"></div>
+								<?php
+							}
+						?>
+						
+						<div class="info d-flex flex-column hidden-xs-down">
+							<div class="title"><?php the_title(); ?></div>
+							<div class="text"><?php the_author(); ?></div>
+						</div>
 					</div>
-				</div>
-
-<!-- DELETE ME -->
-				<div class="d-flex flex-row footer-latest-posting">
-					<img class="image" src="http://placekitten.com/300/200">
-					<div class="info d-flex flex-column hidden-xs-down">
-						<div class="title">Le Posting</div>
-						<div class="text">by super Poster9000</div>
-					</div>
-				</div>
-
-				<div class="d-flex flex-row footer-latest-posting">
-					<img class="image" src="http://placekitten.com/300/200">
-					<div class="info d-flex flex-column hidden-xs-down">
-						<div class="title">Le Posting</div>
-						<div class="text">by super Poster9000</div>
-					</div>
-				</div>
-<!-- DELETE ME END -->
+				<?php 
+					endwhile;
+					wp_reset_postdata();
+				?>
 
 			</div>
 
@@ -78,11 +80,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</form>
 			</div>
 		</div>
+
+		<div class="copyright" style="text-align: center">
+			© 2016 - 2017 SV Mühlbach. All rights reserved. Powered by <a href="https://wordpress.org/">Wordpress</a>. Created by <a href="http://schoerkhuber.net">schoerkhuber.net</a>.
+		</div>
 	</div>
 
-	<div style="text-align: center">
-		© 2016 - 2017 SV Mühlbach. All rights reserved.
-	</div>
+	
 
 <?php if(false) { ?>
 

@@ -25,10 +25,12 @@ body {
 
 .svm-topbar {
     background-color: $ternary-color;
+    height: 10px;
 }
 
 .svm-logobar {
     background-color: $primary-color;
+    pointer-events:none;
 }
 
 .svm-logo {
@@ -114,7 +116,7 @@ body {
 
 /// footer
 .svm-footer {
-    background-color: $footer-background;
+    // background-color: $footer-background;
     background-color: $primary-color;
     
     .svm-footer-content {
@@ -143,6 +145,7 @@ body {
 
             .image {
                 width: 64px;
+                height: 64px;
             }
 
             .info {
@@ -153,5 +156,11 @@ body {
                 }
             }
         }
+
+        
+    }
+
+    .copyright {
+        color: $footer-front;
     }
 }

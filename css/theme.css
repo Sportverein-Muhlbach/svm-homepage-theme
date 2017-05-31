@@ -9239,10 +9239,12 @@ h1.navbar-brand a:hover {
   margin: auto; }
 
 .svm-topbar {
-  background-color: white; }
+  background-color: white;
+  height: 10px; }
 
 .svm-logobar {
-  background-color: #222674; }
+  background-color: #222674;
+  pointer-events: none; }
 
 .svm-logo {
   width: 300px;
@@ -9296,7 +9298,6 @@ h1.navbar-brand a:hover {
   margin-top: 5px; }
 
 .svm-footer {
-  background-color: black;
   background-color: #222674; }
   .svm-footer .svm-footer-content .svm-footer-col {
     padding-left: 40px;
@@ -9310,11 +9311,14 @@ h1.navbar-brand a:hover {
     margin-top: 50px;
     margin-bottom: 20px; }
   .svm-footer .svm-footer-content p, .svm-footer .svm-footer-content label, .svm-footer .svm-footer-content input {
-    color: #555; }
+    color: #AAA; }
   .svm-footer .svm-footer-content .footer-latest-posting {
     margin-bottom: 20px; }
     .svm-footer .svm-footer-content .footer-latest-posting .image {
-      width: 64px; }
+      width: 64px;
+      height: 64px; }
     .svm-footer .svm-footer-content .footer-latest-posting .info {
-      color: #555;
+      color: #AAA;
       margin-left: 10px; }
+  .svm-footer .copyright {
+    color: #AAA; }

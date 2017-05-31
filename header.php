@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 
 	<div class="wrapper-fluid svm-topbar">
-		top
+		
 	</div>
 
 	<div class="wrapper-fluid svm-logobar">
