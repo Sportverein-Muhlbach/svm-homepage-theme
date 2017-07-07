@@ -29,25 +29,35 @@ body {
 }
 
 .svm-logobar {
-    background-color: $primary-color;
+    background-color: $primary-color2;
+    pointer-events:none;
+    padding-bottom: 10px;
+}
+
+.svm-carousel {
+    background-color: $primary-color2;
     pointer-events:none;
 }
 
 .svm-logo {
-    width: 300px; 
-    //height: 150px;
-    margin-top: 50px;
-    margin-left: -38px;
+    width: 280px;
+    top: 0px;
+    left: 70px;
+    z-index: 1200;
+    position: absolute;
 }
 
 .svm-header-bgimg {
-    z-index: 1000;
+    // z-index: 50;
     position: absolute;
-    right: 120px;
+    right: 110px;
+    top: 15px;
+    width: 200px;
+    opacity: .2;
+}
 
-    top: 20px; 
-    width: 400px;
-    opacity: 0.2;
+.svm-carousel > img {
+    z-index: 100;
 }
 
 .svm-searchbar {
@@ -68,6 +78,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
+    padding-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     display: inline-block;
@@ -111,6 +122,29 @@ body {
   border-bottom: 2px solid;
   border-color: $secondary-color;
   margin-top: 5px;
+}
+
+.svm-postlist {
+    .svm-post {
+
+        margin-top: 20px;
+
+        .title {
+            font-size: 42px;
+        }
+
+        .image {
+            width: 128px;
+            height: 128px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .info {
+            margin-left: 20px;
+        }
+    }
 }
 
 
@@ -163,4 +197,8 @@ body {
     .copyright {
         color: $footer-front;
     }
+}
+
+.wp-list-table {
+    width: 100%;
 }

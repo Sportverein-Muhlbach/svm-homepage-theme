@@ -20,6 +20,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+	<link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
@@ -36,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="wrapper-fluid svm-logobar">
 
 		<div class="container">
-			<div class="d-flex flex-row align-items-end" style="margin-left: 100px">
+			<div style="margin-left: 100px; padding-top: 35px;">
 			
 				<img src="<?php bloginfo('template_url'); ?>/img/svm_logo.png" class="svm-logo" />
 				<!--<form class="navbar-form align-bottom svm-searchbar" role="search" style="width: 30%">
@@ -47,20 +50,29 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</form>-->
 
-				<div style="color: white;margin-bottom: 42px; margin-left: 10px">
-					<div>
+				<div style="color: white;margin-bottom: 15px;margin-left: 250px;height: 75px;">
+					<!-- <div>
 						some more stuff
-					</div>
+					</div> -->
 					<div style="font-size: 50px">Sportverein Mühlbach</div>
-					<div>
+					<!-- <div>
 						seit 19XX
-					</div>
+					</div> -->
 
 					<img src="<?php bloginfo('template_url'); ?>/img/runner.png" class="svm-header-bgimg hidden-xs-down" />
 				</div>
 			</div>
 		</div>
+
+		<div class="container svm-carousel">
+			<img src="<?php bloginfo('template_url'); ?>/img/header1.jpg" width="270px" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header2.jpg" width="270px" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header3.jpg" width="270px" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header4.jpg" width="270px" />	
+		</div>
 	</div>
+
+	
 
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
@@ -108,7 +120,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 
-				<form style="width: 100%; max-width: 320px" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+				<!-- <form style="width: 100%; max-width: 320px; margin: 0" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 					<div class="input-group">
 						<input class="field form-control" id="s" name="s" type="text"
 							placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>">
@@ -117,7 +129,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							value="<?php esc_attr_e( 'Search', 'understrap' ); ?>">
 						</span>
 					</div>
-				</form>
+				</form> -->
 
 			<?php if ( 'container' == $container ) : ?>
 

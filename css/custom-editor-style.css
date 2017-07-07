@@ -9243,28 +9243,37 @@ h1.navbar-brand a:hover {
   height: 10px; }
 
 .svm-logobar {
-  background-color: #222674;
+  background-color: #152d54;
+  pointer-events: none;
+  padding-bottom: 10px; }
+
+.svm-carousel {
+  background-color: #152d54;
   pointer-events: none; }
 
 .svm-logo {
-  width: 300px;
-  margin-top: 50px;
-  margin-left: -38px; }
+  width: 280px;
+  top: 0px;
+  left: 70px;
+  z-index: 1200;
+  position: absolute; }
 
 .svm-header-bgimg {
-  z-index: 1000;
   position: absolute;
-  right: 120px;
-  top: 20px;
-  width: 400px;
-  opacity: 0.2; }
+  right: 110px;
+  top: 15px;
+  width: 200px;
+  opacity: .2; }
+
+.svm-carousel > img {
+  z-index: 100; }
 
 .svm-searchbar {
   margin-bottom: 85px;
   margin-left: 20px; }
 
 .navbar {
-  background-color: #222674 !important;
+  background-color: #0c2042 !important;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: normal; }
@@ -9273,6 +9282,7 @@ h1.navbar-brand a:hover {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
+  padding-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
   display: inline-block;
@@ -9297,8 +9307,21 @@ h1.navbar-brand a:hover {
   border-color: #FE3501;
   margin-top: 5px; }
 
+.svm-postlist .svm-post {
+  margin-top: 20px; }
+  .svm-postlist .svm-post .title {
+    font-size: 42px; }
+  .svm-postlist .svm-post .image {
+    width: 128px;
+    height: 128px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .svm-postlist .svm-post .info {
+    margin-left: 20px; }
+
 .svm-footer {
-  background-color: #222674; }
+  background-color: #0c2042; }
   .svm-footer .svm-footer-content .svm-footer-col {
     padding-left: 40px;
     padding-right: 40px; }
@@ -9322,3 +9345,6 @@ h1.navbar-brand a:hover {
       margin-left: 10px; }
   .svm-footer .copyright {
     color: #AAA; }
+
+.wp-list-table {
+  width: 100%; }
