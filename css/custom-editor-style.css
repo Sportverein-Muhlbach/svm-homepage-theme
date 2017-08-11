@@ -9257,6 +9257,39 @@ h1.navbar-brand a:hover {
   left: 70px;
   z-index: 1200;
   position: absolute; }
+  @media (max-width: 990px) {
+    .svm-logo {
+      width: 200px;
+      top: 5px; } }
+  @media (max-width: 768px) {
+    .svm-logo {
+      width: 200px;
+      top: 5px;
+      left: 10px; } }
+  @media (max-width: 538px) {
+    .svm-logo {
+      width: 160px;
+      top: 35px;
+      left: 30px; } }
+
+.svm-sitetitle {
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 250px; }
+  @media (max-width: 990px) {
+    .svm-sitetitle {
+      margin-left: 180px; } }
+  @media (max-width: 768px) {
+    .svm-sitetitle {
+      margin-left: 100px; } }
+  @media (max-width: 538px) {
+    .svm-sitetitle {
+      margin-left: 80px; } }
+  .svm-sitetitle .svm-sitetitle-text {
+    font-size: 50px; }
+    @media (max-width: 990px) {
+      .svm-sitetitle .svm-sitetitle-text {
+        font-size: 30px; } }
 
 .svm-header-bgimg {
   position: absolute;
@@ -9264,6 +9297,9 @@ h1.navbar-brand a:hover {
   top: 15px;
   width: 200px;
   opacity: .2; }
+  @media (max-width: 1200px) {
+    .svm-header-bgimg {
+      display: none; } }
 
 .svm-carousel > img {
   z-index: 100; }
@@ -9348,3 +9384,9 @@ h1.navbar-brand a:hover {
 
 .wp-list-table {
   width: 100%; }
+
+.entry-meta {
+  font-size: 12px;
+  border-top: 1px solid #e7e6e6;
+  border-bottom: 1px solid #e7e6e6;
+  margin-bottom: 40px; }

@@ -50,11 +50,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</form>-->
 
-				<div style="color: white;margin-bottom: 15px;margin-left: 250px;height: 75px;">
+				<div class="svm-sitetitle">
 					<!-- <div>
 						some more stuff
 					</div> -->
-					<div style="font-size: 50px">Sportverein Mühlbach</div>
+					<div class="svm-sitetitle-text">Sportverein Mühlbach</div>
 					<!-- <div>
 						seit 19XX
 					</div> -->
@@ -65,10 +65,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 
 		<div class="container svm-carousel">
-			<img src="<?php bloginfo('template_url'); ?>/img/header1.jpg" width="270px" />
-			<img src="<?php bloginfo('template_url'); ?>/img/header2.jpg" width="270px" />
-			<img src="<?php bloginfo('template_url'); ?>/img/header3.jpg" width="270px" />
-			<img src="<?php bloginfo('template_url'); ?>/img/header4.jpg" width="270px" />	
+			<img src="<?php bloginfo('template_url'); ?>/img/header1.jpg" width="24%" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header2.jpg" width="24%" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header3.jpg" width="24%" />
+			<img src="<?php bloginfo('template_url'); ?>/img/header4.jpg" width="24%" />	
 		</div>
 	</div>
 

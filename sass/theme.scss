@@ -40,6 +40,21 @@ body {
 }
 
 .svm-logo {
+    @media (max-width: 990px) {
+        width: 200px;
+        top: 5px;
+    }
+    @media (max-width: 768px) {
+        width: 200px;
+        top: 5px;
+        left: 10px;
+    }
+    @media (max-width: 538px) {
+        width: 160px;
+        top: 35px;
+        left: 30px;
+    }
+    
     width: 280px;
     top: 0px;
     left: 70px;
@@ -47,7 +62,38 @@ body {
     position: absolute;
 }
 
+.svm-sitetitle {
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 250px;
+    // height: 75px;
+
+    @media (max-width: 990px) {
+        margin-left: 180px;
+    }
+    @media (max-width: 768px) {
+        margin-left: 100px;
+    }
+    @media (max-width: 538px) {
+        margin-left: 80px;
+    }
+
+    .svm-sitetitle-text {
+        font-size: 50px;
+
+        @media (max-width: 990px) {
+            font-size: 30px;
+        }
+    }
+}
+
 .svm-header-bgimg {
+
+    @media (max-width: 1200px) {
+        display: none;
+
+    }
+
     // z-index: 50;
     position: absolute;
     right: 110px;
@@ -201,4 +247,21 @@ body {
 
 .wp-list-table {
     width: 100%;
+}
+
+// post 
+.entry-meta {
+
+    font-size: 12px;
+    border-top: 1px solid #e7e6e6;
+    border-bottom: 1px solid #e7e6e6;
+    margin-bottom: 40px;
+
+    .byline {
+
+    }
+
+    .posted-on {
+
+    }
 }

@@ -12,12 +12,6 @@
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
@@ -35,9 +29,17 @@
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="svm-entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<!-- <?php understrap_entry_footer(); ?> -->
+
+		<?php if ( 'post' == get_post_type() ) : ?>
+
+			<div class="entry-meta">
+				<?php svm_post_meta(); ?>
+			</div><!-- .entry-meta -->
+
+		<?php endif; ?>
 
 	</footer><!-- .entry-footer -->
 
