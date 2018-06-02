@@ -13,7 +13,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
+
 <div class="wrapper svm-footer" id="wrapper-footer">
+<?php if(false) { ?>
 	<div class="container">
 		<div class="row svm-footer-content">
 			<div class="col-md-3 svm-footer-col">	
@@ -26,10 +28,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h3>Kategorien</h3>
 				
 				<a href="#"><p>Kategorien aus Menüleiste wiederholt</p></a>
-<!-- DELETE ME -->				
 				<a href="#"><p>Kategorien aus Menüleiste wiederholt</p></a>
 				<a href="#"><p>Kategorien aus Menüleiste wiederholt</p></a>
-<!-- DELETE ME END -->
 			</div>
 
 			<div class="col-md-3">	
@@ -80,9 +80,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</form>
 			</div>
 		</div>
+		<?php } ?>
 
 		<div class="copyright" style="text-align: center">
-			© 2016 - 2017 SV Mühlbach. All rights reserved. Powered by <a href="https://wordpress.org/">Wordpress</a>. Created by <a href="http://schoerkhuber.net">schoerkhuber.net</a>.
+			© 2016 - 2018 SV Mühlbach. All rights reserved. Powered by <a href="https://wordpress.org/">Wordpress</a>. Created by <a href="http://schoerkhuber.net">schoerkhuber.net</a>.
 		</div>
 	</div>
 
