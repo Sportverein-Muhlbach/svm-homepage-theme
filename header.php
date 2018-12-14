@@ -116,9 +116,50 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_class'      => 'navbar-nav svm-menu-item',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
+						'walker'          => new WP_Level2_Navwalker(),
 					)
-				); ?>
+				); 
+
+				/*wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav svm-menu-item',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Level22_Navwalker(),
+					)
+				);*/
+
+				/*wp_nav_menu(
+					array(
+						"level" => 1,
+						"container"         => "nav",
+						"container_class"   => "container",
+						"container_id"      => "nav",
+						"fallback_cb"       => false,
+						"menu_class"        => "twelve columns omega main-nav sf-menu",
+						"theme_location"    => "primary"
+					)
+				);
+
+				echo("PAGENAME: " . wp_title(''));
+
+				wp_nav_menu(
+					array(
+						"level" => 2,
+						"child_of" => "Home",
+						"container"         => "nav",
+						"container_class"   => "container",
+						"container_id"      => "nav",
+						"fallback_cb"       => false,
+						"menu_class"        => "twelve columns omega main-nav sf-menu",
+						"theme_location"    => "primary"
+					)
+				);*/
+				
+				?>
 
 				<!-- <form style="width: 100%; max-width: 320px; margin: 0" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 					<div class="input-group">

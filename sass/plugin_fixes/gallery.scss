@@ -3,3 +3,12 @@
 span[class^="bwg_title_spun1_"] {
     background-color: rgba(0,0,0,0.5);
 }
+
+span[class^="bwg_album_thumb_spun1_"]:hover {
+    transition: all .25s ease-in-out;
+}
+
+.bwg_close_btn {
+    font-size: 32px !important;
+    color: white;
+}

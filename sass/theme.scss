@@ -1,6 +1,6 @@
 
 
-
+    
 @import "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
 
 @import "plugin_fixes/gallery";
@@ -111,8 +111,29 @@ body {
     opacity: .2;
 }
 
+.dropdown-menu {
+    top: 57px;
+    border: none;
+    border-radius: 0;
+    
+}
+
+.bg-inverse .dropdown-menu {
+    background-color: $primary-color;
+
+    .menu-item a.nav-link:hover {
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+li.menu-item-has-children:hover ul.dropdown-menu {
+    display: block;
+}
+
+
 .svm-carousel > img {
     z-index: 100;
+    height: 176px;
 }
 
 .svm-searchbar {
@@ -120,11 +141,16 @@ body {
     margin-left: 20px;
 }
 
+:not(.active) > .svm-submenu {
+    display: none;
+}
+
 .navbar {
     background-color: $primary-color !important;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: normal;
+    height: 55px;
 }
 
 .navbar-nav > .menu-item {
@@ -155,6 +181,7 @@ body {
 
 .navbar-nav .active > a {
     // color: black !important;
+
 }
 
 .svm-menu-item > li::before {
@@ -176,7 +203,7 @@ body {
   width: 100%;
   border-bottom: 2px solid;
   border-color: $secondary-color;
-  margin-top: 5px;
+  margin-top: -3px;
 }
 
 .svm-postlist {
@@ -245,8 +272,6 @@ body {
                 }
             }
         }
-
-        
     }
 
     .copyright {
