@@ -83,7 +83,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php } ?>
 
 		<div class="copyright" style="text-align: center">
-			© 2016 - 2018 SV Mühlbach. All rights reserved. Powered by <a href="https://wordpress.org/">Wordpress</a>. Created by <a href="http://schoerkhuber.net">schoerkhuber.net</a>.
+			<div>
+				© 2016 - 2019 SV Mühlbach. All rights reserved. Powered by <a href="https://wordpress.org/">Wordpress</a>. Created by <a href="http://schoerkhuber.net">schoerkhuber.net</a>.
+			</div>
+			<div>
+				<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>	
+			</div>
 		</div>
 	</div>
 
