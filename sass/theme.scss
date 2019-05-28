@@ -17,7 +17,7 @@
 @import "theme/theme";  // <--------- Thats where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // contact form 7 - Bootatrap 4 support
 
-
+@import "theme/_menubar";
 
 body {
     // background-color: $primary-color;
@@ -35,6 +35,7 @@ body {
 .svm-topbar {
     background-color: $ternary-color;
     height: 10px;
+
 }
 
 .svm-logobar {
@@ -46,6 +47,11 @@ body {
 .svm-carousel {
     background-color: $primary-color2;
     pointer-events:none;
+
+    img {
+        width: 24%;
+        height: auto;
+    }
 }
 
 .svm-logo {
@@ -111,100 +117,14 @@ body {
     opacity: .2;
 }
 
-.dropdown-menu {
-    top: 57px;
-    border: none;
-    border-radius: 0;
-    
-}
 
-.bg-inverse .dropdown-menu {
-    background-color: $primary-color;
-
-    .menu-item a.nav-link:hover {
-        background-color: rgba(0,0,0,0);
-    }
-}
-
-li.menu-item-has-children:hover ul.dropdown-menu {
-    display: block;
-}
+// Menu
 
 
-.svm-carousel > img {
-    z-index: 100;
-    height: 176px;
-}
 
-.svm-searchbar {
-    margin-bottom: 85px;
-    margin-left: 20px;
-}
 
-:not(.active) > .svm-submenu {
-    display: none;
-}
 
-.navbar {
-    background-color: $primary-color !important;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    height: 55px;
-}
 
-.navbar-nav > .menu-item {
-    // height: 65px;
-    
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: inline-block;
-    position: relative;
-
-    .nav-link {
-        // color: black;
-    }
-
-    .nav-link:hover {
-        // color: black;
-    }
-}
-
-.navbar-inverse .navbar-brand {
-    // color: black;
-    // margin-right: 120px;
-}
-
-.navbar-nav .active > a {
-    // color: black !important;
-
-}
-
-.svm-menu-item > li::before {
-    content: "//";
-    color: $secondary-color;
-
-    margin-top: 10px;
-    position: absolute;
-    left: 0;
-    display: inline-block;
-}
-
-.navbar-nav > .menu-item:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 1px;
-  width: 100%;
-  border-bottom: 2px solid;
-  border-color: $secondary-color;
-  margin-top: -3px;
-}
 
 .svm-postlist {
     .svm-post {
